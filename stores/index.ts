@@ -5,7 +5,7 @@ export const useAppStore = defineStore('app', {
         isDarkMode: false,
         mainLayout: 'app',
         theme: 'light',
-        menu: 'vertical',
+        menu: 'collapsible-vertical',
         layout: 'full',
         rtlClass: 'ltr',
         animation: '',
@@ -99,9 +99,9 @@ export const useAppStore = defineStore('app', {
             localStorage.setItem('i18n_locale', payload);
             this.locale = payload;
             setLocale(payload);
-            if(this.locale?.toLowerCase() === 'ae') {
+            if (this.locale?.toLowerCase() === 'ae') {
                 this.toggleRTL('rtl');
-            }else {
+            } else {
                 this.toggleRTL('ltr');
             }
         },

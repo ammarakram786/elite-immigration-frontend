@@ -1,8 +1,8 @@
 export default defineNuxtConfig({
     app: {
         head: {
-            title: 'Sales Admin | VRISTO - Multipurpose Tailwind Dashboard Template',
-            titleTemplate: '%s | VRISTO - Multipurpose Tailwind Dashboard Template',
+            title: 'Aspire Immigration',
+            // titleTemplate: '%s | VRISTO - Multipurpose Tailwind Dashboard Template',
             htmlAttrs: {
                 lang: 'en',
             },
