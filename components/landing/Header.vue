@@ -1,5 +1,5 @@
 <template>
-    <Disclosure as="nav" class="bg-light-800" v-slot="{ open }">
+    <Disclosure as="nav" class="bg-danger" v-slot="{ open }">
         <div class="mx-auto px-2 sm:px-6 ">
             <div class="relative flex h-28 items-center justify-between">
                 <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -28,7 +28,7 @@
                     <div class="hidden sm:ml-6 sm:block">
                         <div class="px-5 flex space-x-8 pt-5 pb-5">
                             <a v-for="item in navigation" :key="item.name" :href="item.href"
-                                :class="['text-dark hover:bg-primary-light hover:text-dark', 'rounded-md px-6 py-3 text-xl font-medium']"
+                                :class="['hover:bg-primary-light', 'rounded-md px-6 py-3 text-xl font-medium']"
                                 :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
                         </div>
                     </div>
@@ -51,9 +51,10 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 
 const navigation = [
-    { name: 'Home', href: '#', current: true },
-    { name: 'Immigration', href: '#', current: false },
-    { name: 'About', href: '#', current: false },
-    { name: 'citizenship', href: '#', current: false },
+    { name: 'HOME', href: '#', current: true },
+    { name: 'IMMIGRATION', href: '#', current: false },
+    { name: 'ABOUT', href: '#', current: false },
+    { name: 'CITIZENSHIP', href: '#', current: false },
+    { name: 'CONTACT US', href: '#', current: false },
 ]
 </script>
