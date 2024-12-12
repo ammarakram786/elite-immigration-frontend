@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
     app: {
         head: {
-            title: 'Aspire Immigration',
+            title: 'ASPIRE WORLD IMMIGRATION SERVICES',
             // titleTemplate: '%s | VRISTO - Multipurpose Tailwind Dashboard Template',
             htmlAttrs: {
                 lang: 'en',
